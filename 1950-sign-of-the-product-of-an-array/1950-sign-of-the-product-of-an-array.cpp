@@ -6,13 +6,9 @@ int arraySign(vector<int> &nums)
     for (int i = 0; i < nums.size(); i++)
     {
     if (nums.at(i) == 0)
-    {
         return 0;
-    }
     if (nums.at(i) < 0)
-    {
         countOfNeg++;
-    }
     }
     return ((countOfNeg%2==0) ? 1: -1);
 }
