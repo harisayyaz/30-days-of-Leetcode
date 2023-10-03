@@ -5,7 +5,7 @@ class Solution {
             if (nums[i]==0) {
             return 0;
         }
-        else if (product*nums[i]>0)
+        if (product*nums[i]>0)
         product = 1;
         else
         product = -1;
