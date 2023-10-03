@@ -8,7 +8,6 @@ class Solution {
     if (nums[i] < 0)
         countOfNeg++;
     }
-    System.gc();
     return ((countOfNeg%2==0) ? 1: -1);
     }
 }
