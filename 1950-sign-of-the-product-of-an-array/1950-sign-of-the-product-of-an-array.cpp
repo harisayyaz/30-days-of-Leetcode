@@ -12,7 +12,6 @@ int arraySign(vector<int> &nums)
     if (nums.at(i) < 0)
     {
         countOfNeg++;
-        continue;
     }
     }
     (countOfNeg%2==0) ? countOfNeg = 1: countOfNeg = -1;
