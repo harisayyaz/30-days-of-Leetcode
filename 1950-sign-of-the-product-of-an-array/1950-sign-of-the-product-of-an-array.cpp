@@ -21,5 +21,4 @@ int arraySign(vector<int> &nums)
     }
     return product;
 }
-
 };
