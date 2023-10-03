@@ -14,7 +14,6 @@ int arraySign(vector<int> &nums)
         countOfNeg++;
     }
     }
-    (countOfNeg%2==0) ? countOfNeg = 1: countOfNeg = -1;
-    return countOfNeg;
+    return ((countOfNeg%2==0) ? 1: -1);
 }
 };
