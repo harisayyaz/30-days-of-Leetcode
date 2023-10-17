@@ -2,11 +2,12 @@ class Solution {
     public List<List<Integer>> findDifference(int[] nums1, int[] nums2) {
         List<Integer> list1 = new ArrayList<Integer>(0);
         List<Integer> list2 = new ArrayList<Integer>(0);
-
-        for (int i = 0; i < nums1.length; i++) {
+        final int size1 = nums1.length;
+        final int size2 = nums2.length;
+        for (int i = 0; i < size1; i++) {
             int check = 0;
     
-            for (int j = 0; j < nums2.length; j++) {
+            for (int j = 0; j < size2; j++) {
                 if (nums1[i]==nums2[j]) {
                     check++;
                     break;    
@@ -20,9 +21,9 @@ class Solution {
         }
 
 
-         for (int i = 0; i < nums2.length; i++) {
+         for (int i = 0; i < size2; i++) {
             int check = 0;
-            for (int j = 0; j < nums1.length; j++) {
+            for (int j = 0; j < size1; j++) {
                 if (nums2[i]==nums1[j]) {
                     check++;
                     break;    
