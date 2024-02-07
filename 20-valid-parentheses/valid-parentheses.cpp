@@ -21,10 +21,7 @@ public:
                 {
                     return false;
                 }
-                else
-                {
                     stack.pop();
-                }
             }
         }
     }
@@ -32,9 +29,6 @@ public:
     {
         return true;
     }
-    else
-    {
-        return false;
-    }
+    return false;
 }
 };
